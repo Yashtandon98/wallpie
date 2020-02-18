@@ -45,6 +45,7 @@ class _wallpapersState extends State<wallpapers> {
         ),
         itemBuilder: (context, index){
           return GestureDetector(onTap: () {
+            Global.index = index;
             Navigator.of(context).pushNamed('FullImage');
           },child: Container(decoration: BoxDecoration(
             color: Colors.white,
