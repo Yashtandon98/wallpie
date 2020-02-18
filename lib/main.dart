@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'image.dart';
 import 'wallpapers.dart';
 
 void main(){
@@ -10,6 +11,9 @@ class wallPie extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: wallpapers(),
+      routes: {
+        'FullImage':(context)=>FullImage()
+      },
     );
   }
 }
